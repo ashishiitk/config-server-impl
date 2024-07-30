@@ -13,6 +13,15 @@ spring:
           default-label: main
           clone-on-start: true
           refresh-rate: 2000
+          
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://REGISTRY-SERVER:8761/eureka
   
   
 
